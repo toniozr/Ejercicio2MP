@@ -20,3 +20,33 @@ Hora Hora::operator+(int segons)
 
 	return resultant;
 }
+
+
+Hora Hora::operator+(const Hora& obj)
+{
+
+	Hora resultant = obj;
+
+	resultant.m_segons += m_segons;
+	resultant.m_minuts += (resultant.m_segons / 60 + m_minuts);
+	resultant.m_segons %= 60;
+	resultant.m_hora += (resultant.m_minuts / 60 + m_hora);
+	resultant.m_minuts %= 60;
+	resultant.m_hora %= 24;
+
+	return resultant;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -32,6 +32,8 @@ public:
 
 	Hora operator+(int segons);
 
+	Hora operator+(const Hora& obj);
+
 
 private:
 	int m_hora;
