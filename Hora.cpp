@@ -38,6 +38,11 @@ Hora Hora::operator+(const Hora& obj)
 
 }
 
+bool Hora::operator==(const Hora& obj)
+{
+	return obj.m_hora = this->m_hora && obj.m_minuts == this->m_minuts && obj.m_segons == this->m_segons;
+}
+
 
 
 
