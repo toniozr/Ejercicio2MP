@@ -30,6 +30,8 @@ public:
 
 	bool horaValida();
 
+	Hora operator+(int segons);
+
 
 private:
 	int m_hora;
