@@ -38,6 +38,8 @@ public:
 
 	bool operator<(const Hora& obj);
 
+	Hora& operator=(const Hora& obj);
+
 
 private:
 	int m_hora;

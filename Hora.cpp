@@ -61,6 +61,18 @@ bool Hora::operator<(const Hora& obj)
 
 }
 
+Hora& Hora::operator=(const Hora& obj)
+{
+	if(this == &obj)
+		return *this;
+
+	this->m_hora = obj.m_hora;
+	this->m_minuts = obj.m_minuts;
+	this->m_segons = obj.m_segons;
+
+	return *this;
+}
+
 
 
 
