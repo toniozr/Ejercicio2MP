@@ -36,6 +36,8 @@ public:
 
 	bool operator==(const Hora& obj);
 
+	bool operator<(const Hora& obj);
+
 
 private:
 	int m_hora;
