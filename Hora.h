@@ -28,6 +28,8 @@ public:
 	void setMinuts(int minuts) { m_minuts = minuts; }
 	void setSegons(int segons) { m_segons = segons; }
 
+	bool horaValida();
+
 
 private:
 	int m_hora;
