@@ -19,7 +19,7 @@ public:
 
 	//Getters
 	int getHora() { return m_hora; }
-	int getMinut() { return m_minuts; }
+	int getMinuts() { return m_minuts; }
 	int getSegons() { return m_segons; }
 
 	//Setters

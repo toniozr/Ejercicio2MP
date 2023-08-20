@@ -40,7 +40,7 @@ Hora Hora::operator+(const Hora& obj)
 
 bool Hora::operator==(const Hora& obj)
 {
-	return obj.m_hora = this->m_hora && obj.m_minuts == this->m_minuts && obj.m_segons == this->m_segons;
+	return obj.m_hora == this->m_hora && obj.m_minuts == this->m_minuts && obj.m_segons == this->m_segons;
 }
 
 bool Hora::operator<(const Hora& obj)
@@ -54,7 +54,7 @@ bool Hora::operator<(const Hora& obj)
 	if(this->m_minuts < obj.m_minuts)
 		return true;
 
-	else if(this->m_minuts < obj.m_minuts)
+	else if(this->m_minuts > obj.m_minuts)
 		return false;
 
 	return this->m_segons < obj.m_segons;
